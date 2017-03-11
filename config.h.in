@@ -1,0 +1,18 @@
+
+#ifndef DNSREWRITE_CONFIG_H
+#define DNSREWRITE_CONFIG_H
+
+// define this to enable debugging output
+#cmakedefine DEBUG
+
+// configuration environment variable name
+#define DNSREWRITE_CONFIG_ENV ( "@DNSREWRITE_CONFIG_ENV@" )
+
+#ifdef DEBUG
+#  define D(FORMAT...) { fprintf (stderr, FORMAT); }
+#else
+#  define D(FORMAT...) { /* FORMAT */ }
+#endif
+
+#endif
+
