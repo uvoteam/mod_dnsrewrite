@@ -85,7 +85,7 @@ static void dnsrewrite_read_file (const char *filename)
 		D("getaddrinfo: got mapping (%s -> %s)\n", tuple->from, tuple->to);
 
 		if (end)
-			end->next = tuple;
+			end = end->next = tuple;
 		else
 			end = dnsrewrite_list = tuple;
 	}
