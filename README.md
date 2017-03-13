@@ -23,7 +23,7 @@ That's it. For example, you can then run your program like so:
 
 ~~~~
 LD_PRELOAD=/usr/lib/mod_dnsrewrite/dnsrewrite.so \
-    DNSREWRITE_CONFIG=~/.dnsrewrite.conf myprog bla
+    DNSREWRITE_CONFIG=$HOME/.dnsrewrite.conf myprog bla
 ~~~~
 
 # building
@@ -38,6 +38,6 @@ cmake ..
 make
 ~~~~
 
-If you wish - yo can finish with `sudo make install`.
+If you wish - you can finish with `sudo make install`.
 
   -- Mykhailo Danylenko <isbear@isbear.org.ua>
